@@ -5,7 +5,7 @@ const dialog = electron.dialog
 const path = require('path')
 
 const server = 'https://update.electronjs.org'
-const feed = '`${server}/OWNER/REPO/${process.platform}-${process.arch}/${app.getVersion()}`'
+const feed = '`${server}/ImExiledd/ServerTool/${process.platform}-${process.arch}/${app.getVersion()}`'
 autoUpdater.setFeedURL(feed)
 
 const isDev = require('electron-is-dev')
