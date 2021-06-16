@@ -1,0 +1,22 @@
+{
+  "name": "servertool",
+  "version": "2.0.0",
+  "description": "ServerTool",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . --overwrite  --platform=win32 --arch=x64   --prune=true --out=release-builds",
+    "pack": "build --dir",
+    "dist": "electron-builder -mw"
+  },
+  "author": "Exile",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.1.2"
+  },
+  "dependencies": {
+    "electron-is-dev": "^2.0.0",
+    "ps-node": "^0.1.6",
+    "update-electron-app": "^2.0.1"
+  }
+}
